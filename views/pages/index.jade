@@ -1,0 +1,25 @@
+h1 Pages
+a(href='/pages/new').button Create Page
+- if ('undefined' !== typeof pages)
+  #pages-index
+    h3 Pages
+    table
+      thead
+        th Title
+        th Handle
+        th Keywords
+        th Description
+        th Actions
+      tbody
+        - each page in pages
+          tr
+            td #{page.title}
+            td #{page.handle}
+            td #{page.meta.keywords}
+            td #{page.meta.description}
+            td
+              a(href='/pages/edit/#{page.handle}').button Edit
+              a(href='/page/#{page.handle}').button View
+              form(action='/pages/delete/#{page.handle}', method='POST').delete
+                input(type="hidden",name="_csrf", value=csrf)
+                button(type='submit') Delete

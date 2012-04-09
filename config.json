@@ -1,0 +1,112 @@
+{
+  "development": {
+    "port": 8080,
+    "db": {
+      "host": "localhost",
+      "database": "monetizable_development",
+      "port": 27017
+    },
+    "secret": "pXUq8dfHd1w4zYT1E/3m4Alr7UKdyI5-FCtY",
+    "cache_age": 86400000,
+    "show_stack_error": true,
+    "logs": {
+      "set": true
+    },
+    "css": {
+      "count": 0,
+      "debug": false,
+      "set": true
+    },
+    "stylus": {
+      "compress": false,
+      "warn": false,
+      "force": false,
+      "linenos": true
+    },
+    "super_group": {
+      "_id": "super_admin"
+    },
+    "super_user": {
+      "email": "admin@example.com",
+      "name": {
+        "first": "Super",
+        "last": "Admin"
+      },
+      "company": "Monetizable",
+      "password": "admin",
+      "_group": "super_admin"
+    },
+    "user_group": {
+      "_id": "user"
+    },
+    "default_user": {
+      "email": "user@example.com",
+      "name": {
+        "first": "Default",
+        "last": "User"
+      },
+      "company": "Monetizable",
+      "password": "user",
+      "_group": "user"
+    }
+  },
+  "staging": {
+    "port": 8081,
+    "db": {
+      "host": "localhost",
+      "database": "monetizable_staging",
+      "port": 27017
+    }
+  },
+  "production": {
+    "port": 80,
+    "db": {
+      "host": "localhost",
+      "database": "monetizable_production",
+      "port": 27017
+    },
+    "secret": "Gq4B3mkKPE.%95NtUklBd5nNcheXz3b80mKK",
+    "cache_age": 86400000,
+    "show_stack_error": false,
+    "logs": {
+      "set": false
+    },
+    "css": {
+      "count": 0,
+      "debug": false,
+      "set": false
+    },
+    "stylus": {
+      "compress": true,
+      "warn": false,
+      "force": false,
+      "linenos": false
+    },
+    "super_group": {
+      "_id": "super_admin"
+    },
+    "super_user": {
+      "email": "admin@example.com",
+      "name": {
+        "first": "Super",
+        "last": "Admin"
+      },
+      "company": "Monetizable",
+      "password": "admin",
+      "_group": "super_admin"
+    },
+    "user_group": {
+      "_id": "user"
+    },
+    "default_user": {
+      "email": "user@example.com",
+      "name": {
+        "first": "Default",
+        "last": "User"
+      },
+      "company": "Monetizable",
+      "password": "user",
+      "_group": "user"
+    }
+  }
+}

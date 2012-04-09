@@ -1,0 +1,8 @@
+extends layout
+
+block body
+  h1 Welcome
+  p Welcome to Expressling!
+
+block scripts
+  != cacheBuster('/js/mylibs/index.js')

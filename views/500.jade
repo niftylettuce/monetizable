@@ -1,0 +1,19 @@
+
+//- # 500
+
+!!! 5
+html(lang='en')
+head
+  meta(charset='utf-8')
+  title #{title}
+  != cacheBuster('/stylesheets/500.css')
+body
+  .container
+    h1
+      | #{status}
+      span :(
+    #error-stack-trace
+      - if (showStack)
+        pre
+          code
+            != error.stack

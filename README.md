@@ -1,35 +1,42 @@
+
 # monetizable
 
-A Node.js server, which provides an object oriented API to monetize your content through affiliate links.
+A Node.js server that provides an object oriented API to monetize the external links in your app's content via affiliate relationships.
 
 ![getting money](http://dl.dropbox.com/u/219588/dos_equis_getmoney.jpg)
 
 ### Goals & Objectives
 
-The goal of this project is the provide a robust and flexible open source version of content monetization platforms such as Skimlinks and VigLink.
+Provide an open-source version of a content monetization platform (e.g. Skimlinks and VigLink) embodying the following attributes.
 
-### Benefits
+* Fast
+* Stable
+* Flexible
 
-The advantages of using `monetizable` include:
+### Benefits & Advantages
 
-* Use your own affiliate links for full control and transparency into your performance.
-* Develop an intimate relationship with the affiliate networks (e.g. achieve _CJ Performer_ or _Linkshare Platinum_ status).
-* Future-proof outbound links in your user-facing app by extracting affiliation as a service.
-* Centralize reporting on clicks and commissions across all your affiliate networks.
+* Future-proof monetized external links in your user-facing app by extracting affiliation as a service
+* Plug & play with your own affiliate links for full control and transparency into your performance
+* Develop strategic and intimate relationships with the affiliate networks (e.g. achieve _CJ Performer_ or _Linkshare Platinum_ status)
+* Centralize reporting on clicks, commissions and payouts across all your affiliate networks
 
-## Installation
+## Requirements
 
-  Install with the Node.js package manager [npm](http://npmjs.org/):
+  * [node](https://github.com/joyent/node) **>= v0.6.3**
+  * [npm](https://github.com/isaacs/npm)
+  * [MongoDB](http://www.mongodb.org/display/DOCS/Quickstart)
 
-      $ npm install monetizable
+## Getting Started
 
-or
-
-  Install via git clone:
+  Fork the `monetizable` repo and install the npm dependencies.
 
       $ git clone git://github.com/daehee/monetizable.git
       $ cd monetizable
-      $ npm install
+      $ npm install -d
+
+  Start the server.
+
+      $ node server
 
 ## Documentation
 
