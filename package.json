@@ -1,0 +1,19 @@
+{
+    "name": "monetizable"
+  , "description": "Unlock the power of your app's links through affiliate marketing."
+  , "version": "0.0.1"
+  , "author": "Daehee Park <daeheee@gmail.com>"
+  , "contributors": [
+      { "name": "Daehee Park", "email": "daehee@gmail.com" }
+    ]
+  , "keywords": [ "monetization", "affiliate", "affiliate links", "affiliate marketing", "skimlinks", "viglink", "commission junction", "linkshare" ]
+  , "homepage": "https://github.com/daehee/monetizable"
+  , "repository": {
+        "type": "git"
+      , "url": "https://github.com/daehee/monetizable.git"
+    }
+  , "engines": {
+      "node": ">= 0.6.0"
+    }
+  , "main": "./server.js"
+}
